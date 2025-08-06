@@ -1,6 +1,9 @@
-Umamusume Event Text Extractor
+# Umamusume Event Text Extractor
 
 This Python script captures a portion of the screen from the "Umamusume" game window on steam, extracts text using OCR (Tesseract), compares it against known event names, and prints the associated options.
+
+<img width="2807" height="1229" alt="image" src="https://github.com/user-attachments/assets/f96a676b-9d51-4962-bfe6-fb5f9650a3d3" />
+
 
 ---
 
@@ -72,3 +75,7 @@ Every 5 seconds, the script will capture and OCR the target region and try to re
 
 ## Notes
 This script assumes the game runs in 1920x1080 windowed mode.
+This script was created specifically for my own use with Oguri and my support cards, as such if you want to use with your specific Uma and support cards please add them into the relevant files using the same format as this:
+```
+{ "name": "put_event_name_here", "options": {"opt1": "line1, line2, line3... separated by ,", "opt2": "same, can even have opt3,4,5"}
+```

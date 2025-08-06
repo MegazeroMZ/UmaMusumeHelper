@@ -34,5 +34,3 @@ supportCardData = [
     # Placeholders
     {"name": "aaaaaa", "options": {"opt1": "aaaaaa", "opt2": "aaaaaa"}},
 ]
-
-# FORMAT: { "name": "put_name_here", "options": {"opt1": "line1, line2, line3... separated by ,", "opt2": "same, can even have opt3,4,5"}
