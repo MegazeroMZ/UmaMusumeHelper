@@ -46,6 +46,7 @@ supportCardData = [
     {"name": "Encounter With the Sun ☆", "options": {"opt1": "Power +10, Daitaku Helios bond +5", "opt2": "Get Hot Topic status, Daitaku Helios bond +5"}},
     {"name": "Smiles Forever", "options": {"opt1": "Speed +5, Power +10, Daitaku Helios bond +5", "opt2": "Long Shot ○ hint +1, Daitaku Helios bond +5"}},
     # Nice Nature
+    {"name": "Chasing Their Backs", "options": {"opt1": "Energy +5, Wisdom +3, Nice Nature bond +5", "opt2": "Nice Nature bond +20"}},
     {"name": "Not like Meow", "options": {"opt1": "Energy +20, Nice Nature bond +5", "opt2": "Energy +10, Wisdom +5, Nice Nature bond +5"}},
     {"name": "(Delicious) Burden", "options": {"opt1": "Ramp Up hint +1, Nice Nature bond +5", "opt2": "Mood +1, Maximum Energy +4, Nice Nature bond +5"}},
     # Seiun Sky
@@ -68,6 +69,36 @@ supportCardData = [
     # Hishi Amazon
     {"name": "Hishiama's Struggles: Problem Children", "options": {"opt1": "Energy +10, Wisdom +5, Hishi Amazon bond +5", "opt2": "Energy -10, Speed +10, Guts +5, Hishi Amazon bond +5"}},
     {"name": "Hishiama's Struggles: Final Stretch", "options": {"opt1": "Hesitant End Closers hint +1, Hishi Amazon bond +5", "opt2": "Power +5, Skill points +15, Hishi Amazon bond +5"}},
+    # Sweep Tosho
+    {"name": "Some Very Green Friends", "options": {"opt1": "Speed +5, Skill points +10, Lucky Seven hint +1, Sweep Tosho bond +5", "opt2": "Mood -1, Maverick ○ hint +5"}},
+    {"name": "Premeditated Mischief", "options": {"opt1": "Speed +10, Skill points +20, Levelheaded hint +1, Sweep Tosho bond +5", "opt2": "Mood -1, Lone Wolf hint +1"}},
+    {"name": "Miracle ☆ Escape!", "options": {"opt1": "Energy +10, Speed +5, Sweep Tosho bond +5", "opt2": "Energy -10, Speed +20, Sweep Tosho bond +5"}},
+    {"name": "Wonderful ☆ Mistake!", "options": {"opt1": "Random: Energy -15, Skill points +40, OR, Energy -20, Skill points +40, Sweep Tosho bond +5", "opt2": "Get Charming ○ status, Sweep Tosho bond +5"}},
+    # Mejiro Palmer
+    {"name": "Run Away to First Base", "options": {"opt1": "Energy -15, Stamina +10, Guts +10, Mejiro Palmer bond +5", "opt2": "Energy -15, Guts +10, Wisdom +10, Mejiro Palmer bond +5"}},
+    {"name": "Runaway Romance", "options": {"opt1": "Energy +10, Guts +5, Wisdom +5, Mejiro Palmer bond +5", "opt2": "Energy +10, Front Runner Savvy ○ hint +1, Mejiro Palmer bond +5"}},
+    {"name": "Optimistic Escapism: Never Give Up!", "options": {"opt1": "Energy -20, Stamina +5, Guts +5, Vanguard Spirit hint +3 or Keeping the Lead hint +1/+3, Mejiro Palmer bond +5", "opt2": "Energy +10, Lone Wolf hint +1"}},
+    {"name": "An Inescapable Choice?", "options": {"opt1": "Energy -15, Guts +20, Mejiro Palmer bond +5", "opt2": "Power +5, Skill points +15, Mejiro Palmer bond +5"}},
+    {"name": "Optimistic Escapism", "options": {"opt1": "Guts +15, Mejiro Palmer bond +5", "opt2": "Wet Conditions ○ hint +1, Mejiro Palmer bond +5"}},
+    # El Condor Pasa
+    {"name": "Uma-me", "options": {"opt1": "Energy +30, El Condor Pasa bond +5", "opt2": "Stamina to Spare hint +1, El Condor Pasa bond +5, Event chain ended"}},
+    {"name": "Blazing Fire!", "options": {"opt1": "Stamina +10, El Condor Pasa bond +5", "opt2": "Energy -10, Power +20, El Condor Pasa bond +5"}},
+    {"name": "Secret Notebook!", "options": {"opt1": "Power +10, El Condor Pasa bond +5", "opt2": "Sunny Days ○ hint +1, El Condor Pasa bond +5"}},
+    # Mejiro Ryan
+    {"name": "My Muscles and Me, Onward to Tomorrow!", "options": {"opt1": "Energy -10, Power +15, Mejiro Ryan bond +5", "opt2": "Maximum Energy +4, Power +5, Mejiro Ryan bond +5"}},
+    {"name": "It's Not Like I Like Romance!", "options": {"opt1": "Pace Strategy hint +1, Mejiro Ryan bond +5", "opt2": "Energy +30, Mejiro Ryan bond +5"}},
+    # Zenno Rob Roy
+    {"name": "Book-lover Quirks", "options": {"opt1": "Speed +5, Wisdom +5, Zenno Rob Roy bond +5", "opt2": "Energy +10, Power +5, Zenno Rob Roy bond +5"}},
+    {"name": "A Tale Entrusted", "options": {"opt1": "Stamina +10, Wisdom +10, Zenno Rob Roy bond +5", "opt2": "Medium Straightaways ○ hint +1, Zenno Rob Roy bond +5"}},
+    # Biwa Hayahide
+    {"name": "Last-Minute Modal Theory", "options": {"opt1": "Power +15, Biwa Hayahide bond +5", "opt2": "Speed +10, Skill points +15, Biwa Hayahide bond +5"}},
+    {"name": "Step-Out-of-Your-Comfort-Zone Theory", "options": {"opt1": "Energy -10, Inside Scoop hint +1, Biwa Hayahide bond +5", "opt2": "Energy +10, Stamina +10, Biwa Hayahide bond +5"}},
+    # Air Groove
+    {"name": "Strict but Gracious", "options": {"opt1": "Go with the Flow hint +1, Air Groove bond +5", "opt2": "Energy +10, Wisdom +10"}},
+    {"name": "Agile but Strong", "options": {"opt1": "Power +15, Air Groove bond +5", "opt2": "Speed +10, Stamina +5, Air Groove bond +5"}},
+    # Bakushin O
+    {"name": "Genius Efficiency!", "options": {"opt1": "Speed +15, Sakura Bakushin O bond +5", "opt2": "Speed +5, Power +10, Sakura Bakushin O bond +5"}},
+    {"name": "Enough to Break into a Dash!", "options": {"opt1": "Gap Closer hint +1, Sakura Bakushin O bond +5", "opt2": "Energy -10, Speed +10, Power +5, Sakura Bakushin O bond +5"}},
     # Placeholders
     {"name": "aaaaaa", "options": {"opt1": "aaaaaa", "opt2": "aaaaaa"}},
 ]

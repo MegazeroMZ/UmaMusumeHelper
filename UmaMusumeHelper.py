@@ -5,22 +5,35 @@ import win32gui
 import win32con
 import pytesseract
 import difflib
+import re
 
 from SupportCardsData import supportCardData
 from UmaData import umaData
 from EventsData import eventData
 
+from PIL import Image, ImageEnhance
+import cv2
+import numpy as np
+
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+# psm 6 can deal with 1-2 lines
+config = '--psm 6 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 '
 
 data = supportCardData + umaData + eventData
 
+def clean_text(text):
+    # Remove trailing punctuation and multiple spaces
+    return re.sub(r'[-–—\s]+$', '', text).strip()
+
 def find_best_match(extracted_text, data_list):
-    names = [item["name"] for item in data_list]
-    matches = difflib.get_close_matches(extracted_text.strip(), names, n=1, cutoff=0.6)
+    extracted_text = clean_text(extracted_text)
+    names = [clean_text(item["name"]) for item in data_list]
+    matches = difflib.get_close_matches(extracted_text, names, n=1, cutoff=0.6)
     if matches:
         matched_name = matches[0]
         for item in data_list:
-            if item["name"] == matched_name:
+            if clean_text(item["name"]) == matched_name:
                 return item
     return None
 
@@ -49,12 +62,17 @@ while True:
 
     screenshot = pyautogui.screenshot(region=(left, top, width, height))
 
-    textLeft = 272
-    textUpper = 263
+    textLeft = 282
+    textUpper = 253
     textRight = 696
-    textLower = 303
+    textLower = 313
 
     textArea = screenshot.crop((textLeft, textUpper, textRight, textLower))
+    scale_factor = 2
+    new_size = (textArea.width * scale_factor, textArea.height * scale_factor)
+    textArea = textArea.resize(new_size, Image.LANCZOS)
+    text = pytesseract.image_to_string(textArea, lang='eng', config=config).strip()
+
     # textArea.save('screenshot.png');
 
     text = pytesseract.image_to_string(textArea, lang='eng').strip()
