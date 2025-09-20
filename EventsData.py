@@ -1,8 +1,20 @@
 eventData = [
     ################# EVENTS ####################
     {"name": "At Summer Camp (Year 2)", "options": {"opt1": "Power +10", "opt2": "Guts +10"}},
-    {"name": "Dance Lesson", "options": {"opt1": "Power +10", "opt2": "Speed +10"}},
-    {"name": "New Year's Resolutions", "options": {"opt1": "Oguri: Power +10, Rudolf: Wisdom +10", "opt2": "Energy +20", "opt3": "Skill points +20"}},
+    {"name": "Dance Lesson", "options": 
+      {
+        "opt1": "Rudolf: Wit+10 vs Pow+10",
+        "opt2": "GoldShip/GrassWonder: Pow+10 vs Gut+10",
+        "opt3": "Oguri/MejiroRyan: Pow+10 vs Spd+10",
+        "opt4": "Maruzensky: Spd+10 vs Wit+10",
+        "opt5": "Nice Nature Spd+10 vs Gut+10",
+        "opt6": "Taiki: Pow+10 vs Spd+10",
+        "opt7": "Daiwa/Mayano: Gut+10 vs Spd+10", 
+        "opt8": "Agnes: Sta+10 vs Spd+10",
+        "opt9": "Vodka: Guts+10 vs Sta+10"
+      }
+    },
+    {"name": "New Year's Resolutions", "options": {"opt1": "Oguri: Power +10, Rudolf: Wisdom +10, Maruzensky: Speed +10", "opt2": "Energy +20", "opt3": "Skill points +20"}},
     {"name": "New Year's Shrine Visit", "options": {"opt1": "Energy +30", "opt2": "All stats +5", "opt3": "Skill points +35"}},
     {"name": "Acupuncture (Just an Acupuncturist, No Worries! ☆)", "options": {"opt1": "30% All stat +20, 70% Mood -2 All stats -15 Night Owl (bad status)", "opt2": "45% Obtain Corner Recovery o + Straightaway Recovery o, 55% Energy -20 Mood -2", "opt3": "70% Maximum Energy +12 Energy +40 Heal all status effect, 30% Energy -20 Mood -2 Practice Poor (bad status)", "opt4": "85% Energy + 20 Mood +1 Charming o (good status), 15% Energy -10/-20 Mood -1 Practice Poor (bad status)", "opt5": "Energy +10"}},
     {"name": "Extra Training", "options": {"opt1": "Last stat +5, Energy -5", "opt2": "Energy +5"}},

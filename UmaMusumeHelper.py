@@ -81,16 +81,16 @@ while True:
     match = find_best_match(text, data)
     if match:
         print("=" * 40)
-        print(f"📘 Match found: {match['name']}")
+        print(f"\033[94m📘 Match found: {match['name']}\033[0m")  # Blue
         print("-" * 40)
         for key in sorted(match["options"].keys()):
             print(f"{key.capitalize()}:")
             lines = [line.strip() for line in match["options"][key].split(',')]
             for line in lines:
-                print(f"  - {line}")
+                print(f"  \033[92m- {line}\033[0m")  # Green
             print("-" * 40)
         print("=" * 40)
     else:
-        print("❌ No close match found.")
+        print("\033[91m❌ No close match found.\033[0m")  # Red
 
-    time.sleep(5)
+    time.sleep(2)
